@@ -28,8 +28,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User selectUser(long id) {
-        return userRepository.findById(id).orElse(null);
+    public Optional<User> selectUser(long id) {
+        return userRepository.findById(id);
     }
 
     public User updateUser(long id, User user) {
