@@ -1,0 +1,21 @@
+name: Auto Assign
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Auto assign
+        uses: kentaro-m/auto-assign-action@v2.0.0
+        with:
+          # Configuration for assigning reviewers
+          reviewers: |
+            n8himmel
+          # This can be 'pull_request', 'issue', or 'both'
+          add-reviewers: pull_request
+        env:
+          GITHUB_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
