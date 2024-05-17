@@ -1,0 +1,5 @@
+# .github/auto_assign-config.yml
+addReviewers: true
+addAssignees: false
+reviewers:
+  - ivanvegas
