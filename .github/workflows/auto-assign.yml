@@ -14,7 +14,7 @@ jobs:
         with:
           # Configuration for assigning reviewers
           reviewers: |
-            n8himmel
+            josellerenas
           # This can be 'pull_request', 'issue', or 'both'
           add-reviewers: pull_request
         env:
