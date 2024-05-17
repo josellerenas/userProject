@@ -16,5 +16,6 @@ jobs:
           reviewers: ivanvegas
           # This can be 'pull_request', 'issue', or 'both'
           add-reviewers: pull_request
+          configuration-path: .github/workflows/auto_assign.yml
         env:
           GITHUB_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
