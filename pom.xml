@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>20</java.version>
 	</properties>
+	<!-- Comment -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
